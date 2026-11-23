@@ -1,8 +1,8 @@
 # DSH Codex Bridge 0.2.6
 
-在 DSH 里读写本机 Codex 会话：侧栏列出、查看、续问，手机也能用。
+在 DSH 侧栏里接管本机 Codex 会话：按项目列出历史、点开就能读、输入任务让 Codex 在后台继续跑；面板复用 DSH 现有的登录连接，已配对的手机也能浏览会话并派发任务。
 
-在 DSH sidebar read, continue, and browse your local Codex sessions — including from a phone.
+Browse, read, and continue your local Codex sessions straight from the DSH sidebar — grouped by project, tasks keep running in the background after you leave the panel, and the same panel is reachable from a paired phone over the DSH connection you already have.
 
 **[English](#english) · [中文](#中文)**
 

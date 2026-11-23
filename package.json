@@ -1,7 +1,7 @@
 {
   "name": "dsh-codex-bridge",
   "version": "0.2.6",
-  "description": "在本机 Codex 会话之间搭桥：列出、读取、续问，并提供手机可用的 Codex 面板",
+  "description": "在 DSH 侧栏读写本机 Codex 会话：按项目列出、点开阅读、派发任务让 Codex 在后台续跑；复用 DSH 登录连接，已配对的手机也能浏览和派发",
   "type": "module",
   "license": "MIT",
   "author": "qwdqd-dwqd",
