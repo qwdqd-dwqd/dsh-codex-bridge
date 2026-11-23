@@ -1,0 +1,60 @@
+{
+  "name": "dsh-codex-bridge",
+  "version": "0.2.6",
+  "description": "在本机 Codex 会话之间搭桥：列出、读取、续问，并提供手机可用的 Codex 面板",
+  "type": "module",
+  "license": "MIT",
+  "author": "qwdqd-dwqd",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "codex",
+    "codex-cli",
+    "sidebar",
+    "mobile"
+  ],
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "client.js",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qwdqd-dwqd/dsh-codex-bridge.git"
+  },
+  "homepage": "https://github.com/qwdqd-dwqd/dsh-codex-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/qwdqd-dwqd/dsh-codex-bridge/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0"
+  }
+}
